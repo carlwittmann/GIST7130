@@ -9,30 +9,165 @@
         <link rel="stylesheet" href="indexstyle.css">
     </head>
     <body>
-        <div class="navbar-container">
-            <nav class="navbar navbar-expand-md navbar-dark">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation">
+
+        <div class="overlay"></div>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Carl Wittmann - Geospatial Sciences</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="main-navigation">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#Home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="#About">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Education</a>
+                            <a class="nav-link" href="#Education">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#Portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </div>
+        </nav>
 
+        <header id="Home" class="page-header header container-fluid">
+            <div class="description">
+                <div class="circle"></div>
+                <div class="line"></div>
+                <h1>Carl Wittmann</h1>
+                <p>Geospatial Sciences</p>
+                <div class="line"></div>
+                <button class="btn btn-outline-secondary btn-lg">View My Other Site!</button>
+            </div>
+        </header>
+
+        <div class="container"> <!-- Added some vertical margin for spacing -->
+            <div class="row justify-content-center"> <!-- Center the column on the page -->
+                <div class="col-12 col-md-6 col-lg-6"> <!-- Full width on small screens, 10 columns on medium screens, and 8 columns on large screens -->
+                    <article id="About" class="content-article">
+                        <div class="content-wrapper">
+                            <h4>About</h4>
+                            <p>I'm a fledgling geospatial professional looking for opportunities to apply my skills and continue building knowledge.</p>
+                            <p>I strive to stay software-agnostic: I'm comfortable working with a wide range of tools and data.</p>
+                            <p>Most importantly, I'm confident in my ability to learn and adapt. </p>
+                            <img src="./images/sar_dem_thumb.png" class="img-fluid" alt="SAR Interferometric DEM Workflow" title="Interferometric DEM Workflow (Processed using SNAP and SNAPHU)"/> 
+                            <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>Interferometric DEM workflow: (1,2) Coregistered image pair, (3) Goldstein phase filtered interferogram, (4) Unwrapped DEM</i></h6>
+                            <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>(Processed using ESA's SNAP and Blender)</i></h6>
+                        </div>
+                    </article>
+ 
+                    <article id="Education" class="content-article">
+                        <div class="content-wrapper text-center">
+                            <h4>Education</h4>
+                            <a href="https://carlwittmann.github.io/vancouverdiorama/">
+                                <img src="./images/watersheds_thumb.png" alt="Vancouver's Watersheds" class="img-fluid" />
+                            </a> 
+                            <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>Interactive 3D model of Vacouver's Watersheds</i></h6>
+                            <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>(Processed using Google Earth Engine, QGIS, and Mapbox GL JS)</i></h6>
+                            <br>
+                            <table class="table table-dark table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2"><b>British Columbia Institute of Technology</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i>Advanced Diploma in Geographic Information Systems</i></td>
+                                        <td class="text-end"><i>2024</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><b>University of British Columbia</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i>BA Geography (Environment & Sustainability)</i></td>
+                                        <td class="text-end"><i>2023</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><b>Langara College</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i>AA Geography + Certificate in Latin American Studies</i></td>
+                                        <td class="text-end"><i>2018</i></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"><b>GEOS Languages Victoria</b></td>
+                                    </tr>
+                                    <tr>
+                                        <td><i>Teaching English as a Second Language Certificate</i></td>
+                                        <td class="text-end"><i>2010</i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+
+                    <article id="Portfolio" class="content-article">
+                        <div class="content-wrapper text-center">
+                            <h4>Portfolio</h4>
+                            <p>You can view a portfolio of past work, ongoing projects, and favourite resources <a href="https://carlwittmann.github.io/portfolio/">here.</a> <i>(It's a work in progress!)</i></p>
+                            <img src="./images/lidar_thumb.png" class="img-fluid my-3" alt="LiDAR Point Cloud Classification and feature Extraction" title="LiDAR Point Cloud Classification and feature Extraction">
+                            <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>LiDAR Point Cloud Classification and Feature Extraction</i></h6>
+                            <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>(Processed using ArcGIS Pro and Blender.)</i></h6>
+                            <br>
+                            <p>I'm particularly interested in collecting, analyzing, and visualizing diverse sources of data in order to derive meaning and solve real-world problems.</p>
+                        </div>
+                    </article>
+
+                    <article id="Contact" class="content-article">
+                        <div class="content-wrapper text-center">
+                            <h2>Contact</h2>
+                            <div class="text-center mb-4">
+                                <a href="https://github.com/carlwittmann/RPGIS/tree/main/Lab2" target="_blank">
+                                    <img src="./images/rpgis_thumb.png" alt="Fantasy Cartography" class="img-fluid">
+                                </a>
+                                <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>Fantasy Cartography</i></h6>
+                                <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>(Processed using Inkscape, ArcGIS Pro, and Mapbox GL JS)</i></h6>
+                            </div>
+                            <p class="text-center">
+                                Feel free to contact me directly at <a href="mailto:cw.geospatial@gmail.com">cw.geospatial@gmail.com</a> or via <a href="https://www.linkedin.com/in/carl-wittmann-3b4ba1291/">LinkedIn</a>
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+               
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const articles = document.querySelectorAll('.content-article');
+                const header = document.querySelector('.page-header');
+
+                document.querySelector('.navbar').addEventListener('click', function(e) {
+                    if (e.target.classList.contains('nav-link')) {
+                        e.preventDefault();
+
+                        // Hide all articles and the header
+                        articles.forEach(article => article.style.display = 'none');
+                        header.style.display = 'none';
+
+                        // If "Home" link is clicked, show the header and hide all articles
+                        if (e.target.getAttribute('href') === '#Home') {
+                            header.style.display = 'block';
+                            return;
+                        }
+
+                        // Show the clicked article
+                        const targetArticle = document.querySelector(e.target.getAttribute('href'));
+                        if (targetArticle) {
+                            targetArticle.style.display = 'block';
+                        }
+                    }
+                });
+            });
+        </script>
     </body>
 </html>
