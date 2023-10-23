@@ -48,6 +48,7 @@ h6 {
     left: 50%;
     transform: translate(-50%, -55%);
     text-align: center;
+    z-index: 10;
 }
 
 .description h1, .description p {
@@ -96,6 +97,7 @@ h6 {
     overflow-y: auto; /* Makes the content scrollable if it exceeds the max-height */
     padding-right: 35px; /* To ensure the scrollbar doesn't cramp the content and to account for the existing padding */
     margin-top: 50px;
+    z-index: 11;
 }
 
 .content-article img.img-fluid {

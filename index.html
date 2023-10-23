@@ -5,15 +5,18 @@
         <link rel="shortcut icon" href="./favicon.ico" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="indexstyle.css">
     </head>
     <body>
 
+        <!-- This is a mostly-trasparent texture that lays over the background image -->
         <div class="overlay"></div>
         
+        <!-- Bootstrap Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">Carl Wittmann - Geospatial Sciences</a>
+                <a class="navbar-brand">Carl Wittmann - Geospatial Sciences</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -29,15 +32,16 @@
                             <a class="nav-link" href="#Education">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Portfolio">Portfolio</a>
+                            <a class="nav-link" href="#Contact">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Contact">Contact</a>
+                            <a class="nav-link" href="https://carlwittmann.github.io/portfolio">Portfolio</a>
                         </li>
                     </ul>
                 </div>
         </nav>
 
+        <!-- Header section with some simple CSS geometric design elements -->
         <header id="Home" class="page-header header container-fluid">
             <div class="description">
                 <div class="circle"></div>
@@ -45,13 +49,13 @@
                 <h1>Carl Wittmann</h1>
                 <p>Geospatial Sciences</p>
                 <div class="line"></div>
-                <button class="btn btn-outline-secondary btn-lg">View My Other Site!</button>
             </div>
         </header>
 
-        <div class="container"> <!-- Added some vertical margin for spacing -->
-            <div class="row justify-content-center"> <!-- Center the column on the page -->
-                <div class="col-12 col-md-6 col-lg-6"> <!-- Full width on small screens, 10 columns on medium screens, and 8 columns on large screens -->
+        <!-- Bootstrap containers w/ responsive columns for my <article> elements -->
+        <div class="container"> 
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 col-lg-6">
                     <article id="About" class="content-article">
                         <div class="content-wrapper">
                             <h4>About</h4>
@@ -67,9 +71,7 @@
                     <article id="Education" class="content-article">
                         <div class="content-wrapper text-center">
                             <h4>Education</h4>
-                            <a href="https://carlwittmann.github.io/vancouverdiorama/">
-                                <img src="./images/watersheds_thumb.png" alt="Vancouver's Watersheds" class="img-fluid" />
-                            </a> 
+                            <img src="./images/watersheds_thumb.png" alt="Vancouver's Watersheds" class="img-fluid" />
                             <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>Interactive 3D model of Vacouver's Watersheds</i></h6>
                             <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>(Processed using Google Earth Engine, QGIS, and Mapbox GL JS)</i></h6>
                             <br>
@@ -108,30 +110,16 @@
                         </div>
                     </article>
 
-                    <article id="Portfolio" class="content-article">
-                        <div class="content-wrapper text-center">
-                            <h4>Portfolio</h4>
-                            <p>You can view a portfolio of past work, ongoing projects, and favourite resources <a href="https://carlwittmann.github.io/portfolio/">here.</a> <i>(It's a work in progress!)</i></p>
-                            <img src="./images/lidar_thumb.png" class="img-fluid my-3" alt="LiDAR Point Cloud Classification and feature Extraction" title="LiDAR Point Cloud Classification and feature Extraction">
-                            <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>LiDAR Point Cloud Classification and Feature Extraction</i></h6>
-                            <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>(Processed using ArcGIS Pro and Blender.)</i></h6>
-                            <br>
-                            <p>I'm particularly interested in collecting, analyzing, and visualizing diverse sources of data in order to derive meaning and solve real-world problems.</p>
-                        </div>
-                    </article>
-
                     <article id="Contact" class="content-article">
                         <div class="content-wrapper text-center">
                             <h2>Contact</h2>
                             <div class="text-center mb-4">
-                                <a href="https://github.com/carlwittmann/RPGIS/tree/main/Lab2" target="_blank">
-                                    <img src="./images/rpgis_thumb.png" alt="Fantasy Cartography" class="img-fluid">
-                                </a>
+                                <img src="./images/rpgis_thumb.png" alt="Fantasy Cartography" class="img-fluid">
                                 <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>Fantasy Cartography</i></h6>
                                 <h6 style="color: darkgrey; margin-top: 0px; margin-bottom: 0px;"><i>(Processed using Inkscape, ArcGIS Pro, and Mapbox GL JS)</i></h6>
                             </div>
                             <p class="text-center">
-                                Feel free to contact me directly at <a href="mailto:cw.geospatial@gmail.com">cw.geospatial@gmail.com</a> or via <a href="https://www.linkedin.com/in/carl-wittmann-3b4ba1291/">LinkedIn</a>
+                                Please direct all professional correspondence to cw.geospatial@gmail.com</a>
                             </p>
                         </div>
                     </article>
@@ -139,35 +127,33 @@
             </div>
         </div>
         
+        <!-- Bootstrap JS CDN -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-               
+        
+        <!-- jQuery script for displaying a single article at a time. Shamelessly adapted from https://stackoverflow.com/questions/31325895/showing-content-based-on-a-nav-link-clicked -->
         <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const articles = document.querySelectorAll('.content-article');
-                const header = document.querySelector('.page-header');
-
-                document.querySelector('.navbar').addEventListener('click', function(e) {
-                    if (e.target.classList.contains('nav-link')) {
+            $(document).ready(function() {
+                var $content = $('.content-article');
+                function showContent(selector) {
+                    $content.hide();
+                    $(selector).show();
+                }    
+                $('.navbar-nav').on('click', '.nav-link', function(e) {
+                    var hrefValue = $(this).attr("href");
+                    if (hrefValue.startsWith("#")) {
                         e.preventDefault();
-
-                        // Hide all articles and the header
-                        articles.forEach(article => article.style.display = 'none');
-                        header.style.display = 'none';
-
-                        // If "Home" link is clicked, show the header and hide all articles
-                        if (e.target.getAttribute('href') === '#Home') {
-                            header.style.display = 'block';
-                            return;
-                        }
-
-                        // Show the clicked article
-                        const targetArticle = document.querySelector(e.target.getAttribute('href'));
-                        if (targetArticle) {
-                            targetArticle.style.display = 'block';
+                        if (hrefValue === "#Home") {
+                            $("header").show();
+                            $content.hide();
+                        } else {
+                            showContent(hrefValue);
+                            $("header").hide();
                         }
                     }
                 });
+                $("header").show();
+                $content.hide();
             });
-        </script>
+        </script>      
     </body>
 </html>
