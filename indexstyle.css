@@ -128,3 +128,11 @@ h6 {
     text-align: left;
 }
 
+/* I was having difficulty getting my <body> elements correctly positioned on the page, this overrides that so the footer is where a footer should be */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
