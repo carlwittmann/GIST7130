@@ -1,5 +1,8 @@
+/* I like this font! */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600");
 
+
+/* Setting some basic properties for everything in <body> */
 body {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
@@ -12,6 +15,8 @@ body {
     overflow: auto;
 }
 
+
+/* Giving headers a bit of pizzaz */
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     font-weight: 600;
@@ -30,6 +35,8 @@ h6 {
     font-size: 0.6rem;
 }
 
+
+/* Styling for the overlay texture */
 .overlay::before {
     content: "";
     position: absolute;
@@ -42,6 +49,8 @@ h6 {
     filter: blur(0.2rem);
 }
 
+
+/* Header styling and geometric shapes */
 .description {
     position: absolute;
     top: 45%;
@@ -72,7 +81,9 @@ h6 {
     opacity: 0.7;
 }
 
-.description button {
+
+/* I'm not using this button anymore */
+/* .description button {
     border: 1px solid #fff;
     background: transparent;
     color: #fff;
@@ -84,8 +95,10 @@ h6 {
     background: rgba(255, 255, 255, 0.4);
     color: #000;
     opacity: 0.9;
-}
+} */
 
+
+/* Styling for the <article> elements */
 .content-article {
     display: none;
     background-color: rgba(50, 50, 50, 0.8);
@@ -93,17 +106,17 @@ h6 {
     padding: 20px;
     border-radius: 4px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    max-height: calc(100vh - 100px); /* Adjusts the height to be the full viewport height minus some space for the navbar and potential margins/paddings */
-    overflow-y: auto; /* Makes the content scrollable if it exceeds the max-height */
-    padding-right: 35px; /* To ensure the scrollbar doesn't cramp the content and to account for the existing padding */
+    max-height: calc(100vh - 100px); 
+    overflow-y: auto; 
+    padding-right: 35px; 
     margin-top: 50px;
     z-index: 11;
 }
 
 .content-article img.img-fluid {
     width: 75%;
-    margin: 0 auto; /* This will center the image */
-    display: block; /* Ensures the image is treated as a block-level element */
+    margin: 0 auto; 
+    display: block; 
 }
 
 .table-wrapper {
